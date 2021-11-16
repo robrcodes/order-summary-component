@@ -1,0 +1,45 @@
+/* colors */
+
+:root {
+    --paleBlue: hsl(225,100%,94%);
+    --brightBlue: hsl(245,75%,52%);
+    --vPaleBlue: hsl(225,100%,98%);
+    --desatBlue: hsl(224,23%,55%);
+    --darkBlue: hsl(223,47%,23%);
+
+  }
+  /* Box sizing to border-box Reset */
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /* end border-box Reset */
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--paleBlue);
+  }
+  
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  section {
+    min-height: calc(100vh - 60px); /* to aid creation of sticky footer */
+    width: 375px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 40px;
+  }
+
+  /* Mobile First ----------------------------  */
+
+
