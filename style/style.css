@@ -12,6 +12,7 @@
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
   }
   
   *,
@@ -22,8 +23,9 @@
   /* end border-box Reset */
   
   body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     background-color: var(--paleBlue);
+    
   }
   
 
@@ -31,15 +33,89 @@
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
 
-  section {
-    min-height: calc(100vh - 60px); /* to aid creation of sticky footer */
+  footer {
+    /* height: 40px; */
+  }
+  
+  /* Mobile First ----------------------------  */
+  
+  .container {
+    /* min-height: calc(100vh - 60px); to aid creation of sticky footer */
     width: 375px;
     margin: 0 auto;
+    min-height: 96vh;
+    border: 1px dashed red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  footer {
-    height: 40px;
+  
+  .card {
+    border: 1px dashed red;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 325px;
+    margin: 0 auto;
   }
 
-  /* Mobile First ----------------------------  */
+  .hero-img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 
+  .card-body {
+    margin: 25px;
+    text-align: center;
+  }
 
+  h1 {
+    color: var(--darkBlue);
+  }
+
+  .card-plan {
+    background-color: var(--vPaleBlue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .plan-name {
+    color: var(--darkBlue);
+    font-weight: 900;
+  }
+
+  .plan-price {
+    color: var(--desatBlue);
+  }
+
+  .card-plan a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+  .btn {
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+    border: 0px;
+    border-radius: 8px;
+
+  }
+
+  .btn-cancel {
+    background-color: transparent;
+    color: var(--desatBlue);
+    font-weight: 700;
+
+  }
+   .btn-proceed {
+
+   }
