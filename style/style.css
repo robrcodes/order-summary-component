@@ -92,21 +92,24 @@
   }
 
   .card-plan a {
-    color: blue;
+    color: var(--brightBlue);
     text-decoration: underline;
   }
 
 .card-buttons {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
   .btn {
     display: inline-block;
-    background-color: blue;
+    background-color: var(--brightBlue);
     color: #fff;
     border: 0px;
     border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
   }
 
