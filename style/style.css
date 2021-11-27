@@ -3,6 +3,7 @@
 :root {
     --paleBlue: hsl(225,100%,94%);
     --brightBlue: hsl(245,75%,52%);
+    --brightBlueHover: hsl(245,83%,69%);
     --vPaleBlue: hsl(225,100%,98%);
     --desatBlue: hsl(224,23%,55%);
     --darkBlue: hsl(223,47%,23%);
@@ -113,6 +114,11 @@
     font-size: 12rem;
     font-weight: 700;
   }
+
+  .card-plan a:hover {
+    color: var(--brightBlueHover);
+    cursor: pointer;
+  }
   
   .card-buttons {
     display: flex;
@@ -124,7 +130,7 @@
     display: inline-block;
     background-color: var(--brightBlue);
     color: #fff;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 14px;
     border: 0px;
     border-radius: 8px;
@@ -133,13 +139,25 @@
     
   }
   
+  .btn:hover {
+    background-color: var(--brightBlueHover);
+    font-weight: 900;
+    cursor: pointer;
+  }
+
   .btn-cancel {
     background-color: transparent;
     color: var(--desatBlue);
     font-weight: 700;
     margin-top: 15px;
-    
   }
+
+  .btn-cancel:hover {
+    background-color: transparent;
+    color: var(--darkBlue);
+    font-weight: 900;
+  }
+
   .btn-proceed {
     box-shadow: 0px 20px 10px var(--paleBlue);
     
