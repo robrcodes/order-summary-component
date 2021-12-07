@@ -11,7 +11,7 @@
   }
   /* Box sizing to border-box Reset */
   html {
-    font-size: 6.25%;
+    font-size: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
     
@@ -26,7 +26,7 @@
   
   body {
     font-family: "Red Hat Display", sans-serif;
-    font-size: 16rem;
+    font-size: 1rem;
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -36,7 +36,7 @@
   
 
 
-  .attribution { font-size: 11rem; text-align: center; }
+  .attribution { font-size: 0.68rem; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
 
   /* footer {
@@ -78,40 +78,48 @@
 
   h1 {
     color: var(--darkBlue);
-    font-size: 22rem;
+    font-size: 1.375rem;
     font-weight: 900;
   }
 
   .card-body p {
     color: var(--desatBlue);
     /* font-weight: 200; */
-    margin-bottom: 30rem;
+    margin-bottom: 1.875rem;
   }
-
+ 
   .card-plan {
     background-color: var(--vPaleBlue);
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     padding: 20px;
   }
   
+.plan-details {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  margin-left: 18px;
+}
+  
   .plan-name {
     color: var(--darkBlue);
     font-weight: 900;
-    font-size: 13rem;
+    font-size: 0.9rem;
   }
   
   .plan-price {
     color: var(--desatBlue);
-    font-size: 13rem;
+    font-size: 1rem;
   }
   
   .card-plan a {
     color: var(--brightBlue);
     text-decoration: underline;
-    font-size: 12rem;
+    font-size: 0.8rem;
     font-weight: 700;
   }
 
@@ -130,12 +138,12 @@
     display: inline-block;
     background-color: var(--brightBlue);
     color: #fff;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 900;
+    font-size: 0.9rem;
     border: 0px;
     border-radius: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     
   }
   
@@ -171,11 +179,24 @@
 
       .container {
         width: 475px;
-        background-color: red;
       }
 
       .card {
         width: 425px;
+      }
+
+      .plan-name {
+        font-weight: 900;
+        font-size: 1rem;
+      }
+      
+      .plan-price {
+        font-size: 1.1rem;
+      }
+      
+      .card-plan a {
+        font-size: 0.9rem;
+        font-weight: 700;
       }
 
    }
