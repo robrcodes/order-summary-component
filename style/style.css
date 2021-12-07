@@ -1,202 +1,199 @@
-/* colors */
+/* 
 
+color variables defined
+*/
 :root {
-    --paleBlue: hsl(225,100%,94%);
-    --brightBlue: hsl(245,75%,52%);
-    --brightBlueHover: hsl(245,83%,69%);
-    --vPaleBlue: hsl(225,100%,98%);
-    --desatBlue: hsl(224,23%,55%);
-    --darkBlue: hsl(223,47%,23%);
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --brightBlueHover: hsl(245, 83%, 69%);
+  --vPaleBlue: hsl(225, 100%, 98%);
+  --desatBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+/* Box sizing to border-box Reset 
+  Also setting font size to 100% to use rems
+  1rem = 16px initially with default browser settings
+*/
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-  }
-  /* Box sizing to border-box Reset */
-  html {
-    font-size: 100%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  /* end border-box Reset */
-  
-  body {
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 1rem;
-    background-image: url(../images/pattern-background-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: var(--paleBlue);
-    
-  }
-  
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
+/* Setting up background and base font */
 
-  .attribution { font-size: 0.68rem; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--paleBlue);
+}
 
-  /* footer {
-    height: 40px;
-  } */
-  
-  /* Mobile First ----------------------------  */
-  
-  .container {
-    /* min-height: calc(100vh - 60px); to aid creation of sticky footer */
-    width: 375px;
-    margin: 0 auto;
-    min-height: 96vh;
-    /* border: 1px dashed red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card {
-    /* border: 1px dashed red; */
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 325px;
-    margin: 0 auto;
-  }
+/* Credit information below code */
 
-  .hero-img {
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
+.attribution {
+  font-size: 0.68rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-  .card-body {
-    margin: 25px;
-    text-align: center;
-  }
+/* Mobile First ----------------------------  */
 
-  h1 {
-    color: var(--darkBlue);
-    font-size: 1.375rem;
-    font-weight: 900;
-  }
+.container {
+  width: 375px;
+  margin: 0 auto;
+  min-height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .card-body p {
-    color: var(--desatBlue);
-    /* font-weight: 200; */
-    margin-bottom: 1.875rem;
-  }
- 
-  .card-plan {
-    background-color: var(--vPaleBlue);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-  }
-  
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 325px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  margin: 25px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--darkBlue);
+  font-size: 1.375rem;
+  font-weight: 900;
+}
+
+.card-body p {
+  color: var(--desatBlue);
+  margin-bottom: 1.875rem;
+}
+
+.card-plan {
+  background-color: var(--vPaleBlue);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
 .plan-details {
   display: inline-block;
   vertical-align: top;
   padding-top: 5px;
   margin-left: 18px;
 }
-  
-  .plan-name {
-    color: var(--darkBlue);
-    font-weight: 900;
-    font-size: 0.9rem;
+
+.plan-name {
+  color: var(--darkBlue);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.plan-price {
+  color: var(--desatBlue);
+  font-size: 1rem;
+}
+
+.card-plan a {
+  color: var(--brightBlue);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.card-plan a:hover {
+  color: var(--brightBlueHover);
+  cursor: pointer;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--brightBlue);
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.9rem;
+  border: 0px;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.btn:hover {
+  background-color: var(--brightBlueHover);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: var(--desatBlue);
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.btn-cancel:hover {
+  background-color: transparent;
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+
+.btn-proceed {
+  box-shadow: 0px 20px 10px var(--paleBlue);
+}
+
+/*
+*
+******* Desktop styles *****************
+*
+*/
+@media (min-width: 700px) {
+  .container {
+    width: 475px;
   }
-  
-  .plan-price {
-    color: var(--desatBlue);
+
+  .card {
+    width: 425px;
+  }
+
+  .plan-name {
+    font-weight: 900;
     font-size: 1rem;
   }
-  
+
+  .plan-price {
+    font-size: 1.1rem;
+  }
+
   .card-plan a {
-    color: var(--brightBlue);
-    text-decoration: underline;
-    font-size: 0.8rem;
-    font-weight: 700;
-  }
-
-  .card-plan a:hover {
-    color: var(--brightBlueHover);
-    cursor: pointer;
-  }
-  
-  .card-buttons {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: var(--brightBlue);
-    color: #fff;
-    font-weight: 900;
     font-size: 0.9rem;
-    border: 0px;
-    border-radius: 8px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    
-  }
-  
-  .btn:hover {
-    background-color: var(--brightBlueHover);
-    font-weight: 900;
-    cursor: pointer;
-  }
-
-  .btn-cancel {
-    background-color: transparent;
-    color: var(--desatBlue);
     font-weight: 700;
-    margin-top: 15px;
   }
-
-  .btn-cancel:hover {
-    background-color: transparent;
-    color: var(--darkBlue);
-    font-weight: 900;
-  }
-
-  .btn-proceed {
-    box-shadow: 0px 20px 10px var(--paleBlue);
-    
-   }
-
-
-   /*
-   ******* Desktop  *****************
-   */
-   @media (min-width: 700px)  {
-
-      .container {
-        width: 475px;
-      }
-
-      .card {
-        width: 425px;
-      }
-
-      .plan-name {
-        font-weight: 900;
-        font-size: 1rem;
-      }
-      
-      .plan-price {
-        font-size: 1.1rem;
-      }
-      
-      .card-plan a {
-        font-size: 0.9rem;
-        font-weight: 700;
-      }
-
-   }
+}
